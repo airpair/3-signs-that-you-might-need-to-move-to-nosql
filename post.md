@@ -2,7 +2,7 @@
 
 ![Why use NoSQL](https://blog.cloudboost.io/content/images/2015/06/nosql.jpg)
 
-NoSQL databases are a class of databases in which data is NOT stored in tabular relations - unlike other relational database solutions, and this is why it is called "Not Only SQL". Data which is stored in other data-structure other than tabular relations are sometimes better for some scenarios which are outlined later in this post. 
+NoSQL databases are a class of databases in which data is NOT stored in tabular relations - Unlike other relational database solutions, and this is why it is called "Not Only SQL". Data which is stored in other data-structure other than tabular relations are sometimes better for some scenarios which are outlined later in this post. 
 
 NoSQL databases are great at doing a bunch of things. For example - storing big data for internet scale applications, scenarios which prefer low latency data-storage, improved performance, and more. 
 
