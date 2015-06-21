@@ -2,7 +2,7 @@
 
 ![Why use NoSQL](https://blog.cloudboost.io/content/images/2015/06/nosql.jpg)
 
-NoSQL databases are a class of databases in which data is NOT stored in tabular relations - Unlike other relational database solutions and this is why it is called "Not Only SQL". Data which is stored in other data-structure other than tabular relations are sometimes better for some scenarios which are outlined later in this post. 
+NoSQL databases are a class of databases in which data is NOT stored in tabular relations - unlike other relational database solutions, and this is why it is called "Not Only SQL". Data which is stored in other data-structure other than tabular relations are sometimes better for some scenarios which are outlined later in this post. 
 
 NoSQL databases are great at doing a bunch of things. For example - storing big data for internet scale applications, scenarios which prefer low latency data-storage, improved performance, and more. 
 
@@ -25,19 +25,19 @@ There are two things you can do when you want to scale your solution. You can ei
 
 NoSQL is a perfect solution when you have a ton of data that doesn't fit on a single server. Most of the NoSQL databases are horizontally scalable - What I mean by this is you can shard or divide your data into multiple servers and still have efficient access to your data. NoSQL databases are elastic, you can have thousands of nodes / servers and you can scale horizontally well.  
 
-####What you'll be missing? 
+####What will you be missing? 
 
 #####No relations and joins: 
 
-Most NoSQL databases for example MongoDb has no relation support between tables (Graph Databases like Neo4j does, but that’s a completely different type of database to look at) - Which means there's no support for joins when you query your data. If you have joins between your data you can combine documents together and save them as sub-documents or do a manual join by running two queries over your database.  
+Most NoSQL databases for example MongoDb have no relation support between tables (Graph Databases like Neo4j does, but that’s a completely different type of database to look at) - Which means there's no support for joins when you query your data. If you have joins between your data you can combine documents together and save them as sub-documents or do a manual join by running two queries over your database.  
 
 #####No atomic operations:
 
-Most of the NoSQL databases like MongoDB have no atomic operations or transactions across multiple tables / record. For example, In MongoDB a single write is atomic but if you write multiple records / documents at the same time then as a whole they're not atomic. If you want to ever need to have transaction support on your data which is critical for your solution. You should store that piece of data in RDBMS instead. 
+Most of the NoSQL databases like MongoDB have no atomic operations or transactions across multiple tables / record. For example, In MongoDB a single write is atomic but if you write multiple records / documents at the same time then as a whole they're not atomic. If you ever need to have transaction support on your data which is critical for your solution. You should store that piece of data in RDBMS instead. 
 
 #####No reporting: 
 
-NoSQL has no reporting in general - as you've used to when you were on RDBMS databases. If you want to generate reports, create graphs, or do something with all of the data in your NoSQL stack, you'll need to start coding and write what we call - ["map-reduce"](https://en.wikipedia.org/wiki/MapReduce) jobs for the reports you want.
+NoSQL has no reporting in general - as you're used to when you were on RDBMS databases. If you want to generate reports, create graphs, or do something with all of the data in your NoSQL stack, you'll need to start coding and write what we call - ["map-reduce"](https://en.wikipedia.org/wiki/MapReduce) jobs for the reports you want.
 
 
 ####Where is NoSQL the best fit? 
